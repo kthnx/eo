@@ -65,7 +65,7 @@ if (page==0) {
  } else if (page == 3) {
    image(doT2,0,0);
 
-   if (mouseIsPressed && mouseX>100 && mouseX<275 && mouseY >280){
+   if (mouseIsPressed && mouseX>108 && mouseX<318 && mouseY >508){
 image(doT22,0,0);
 
    }
