@@ -25,6 +25,7 @@ function setup () {
   fill(255);
 
   page = 0;
+
 }
 
 function inputEvent() {
@@ -63,6 +64,13 @@ if (page==0) {
    image(doT1,0,0);
  } else if (page == 3) {
    image(doT2,0,0);
+
+   if (mouseIsPressed && mouseX>100 && mouseX<275 && mouseY >280){
+image(doT22,0,0);
+
+   }
+
+
  } else if (page == 4) {
    image(doT3,0,0);
  }
@@ -165,5 +173,13 @@ function mousePressed () {
  } else
  if (page == 8 && mouseX>0 && mouseX<60 && mouseY>150 && mouseY<260) {
      page=7;
+ }
+
+ else
+
+ if (page > 1 && page < 9){
+   if (mouseX>0 && mouseX <60 && mouseY >370 && mouseY <430){
+     page=0;
+   }
  }
 }
